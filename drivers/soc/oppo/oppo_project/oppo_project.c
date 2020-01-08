@@ -275,7 +275,7 @@ static ssize_t serialID_read_proc(struct file *file, char __user *buf,
         else{
                 len = 0;
         }
-        pr_err("serialID_read_proc serialno= %s. page = %x off = %d  len = %d  count= %d \n",serialno,page,*off,len,count);
+        //pr_err("serialID_read_proc serialno= %s. page = %x off = %d  len = %d  count= %d \n",serialno,page,*off,len,count);
         if (copy_to_user(buf, page, (len < count ? len : count))) {
                 return -EFAULT;
         }

@@ -1272,7 +1272,7 @@ static ssize_t nvt_direction_write(struct file *file, const char __user *userbuf
 		NVT_ERR("count is 0 error\n");
 		return -EINVAL;
 	}
-	NVT_LOG("count:%d",count);
+	//NVT_LOG("count:%d",count);
 	if(copy_from_user(cmd, userbuf, count)) {
 		NVT_ERR("input value error\n");
 		return -EINVAL;

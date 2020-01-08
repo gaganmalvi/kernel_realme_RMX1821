@@ -755,7 +755,7 @@ static ssize_t ilitek_direction_write(struct file *file, const char __user *user
 		ipio_err("count is 0 error\n");
 		return -EINVAL;
 	}
-	ipio_info("count:%d",count);
+	//ipio_info("count:%d",count);
 	if(copy_from_user(buf, userbuf, count)) {
 		ipio_err("input value error\n");
 		return -EINVAL;
